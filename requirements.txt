@@ -1,0 +1,11 @@
+Flask==3.1.1
+gunicorn==23.0.0
+python-dotenv==1.1.1
+psycopg2-binary==2.9.10
+supabase==2.18.1
+postgrest==1.1.1
+gotrue==2.12.3
+realtime==2.7.0
+storage3==0.12.1
+httpx==0.28.1
+requests==2.32.5
