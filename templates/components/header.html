@@ -1,0 +1,78 @@
+<header class="header" id="header">
+
+    <div class="wrap header__bar">
+        <a
+            href="{{ url_for('index') }}"
+            class="brand"
+            aria-label="Globion Solution Private Limited"
+        >
+            <img
+                src="{{ url_for('static', filename='img/logo.png') }}"
+                alt="Globion Solution Private Limited Logo"
+                class="brand__logo"
+            >
+            <div class="brand__text">
+
+                <span class="brand__title">
+                    Globion Solution
+                </span>
+
+                <span class="brand__subtitle">
+                    Private Limited
+                </span>
+
+            </div>
+        </a>
+
+        <!-- ===================== Navigation ===================== -->
+
+        <nav
+            class="nav"
+            id="nav"
+            aria-label="Primary Navigation"
+        >
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">Why Us</a>
+            <a href="#process">Process</a>
+            <a href="#team">Team</a>
+            <a href="#safety">Safety</a>
+            <a
+                href="#quote"
+                class="btn header__cta"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+
+                <span>
+                    Get a Quote
+                </span>
+
+            </a>
+
+        </nav>
+        <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+            aria-controls="nav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>

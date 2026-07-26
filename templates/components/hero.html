@@ -1,0 +1,163 @@
+<section class="hero" aria-label="Introduction">
+    <!-- Background Video -->
+    <video class="hero__video"
+           autoplay
+           muted
+           loop
+           playsinline
+           preload="auto">
+        <source src="{{ url_for('static', filename='img/88225-606079090_medium.mp4') }}"
+                type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="hero__overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="wrap hero__inner">
+
+        <!-- Badge -->
+        <span class="hero__badge">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+                <path d="M12 2 3 7v6c0 4.5 3.6 8.5 9 9 5.4-.5 9-4.5 9-9V7l-9-5Z"/>
+
+            </svg>
+        Government Infrastructure • Facility Management • Public Services
+        </span>
+
+        <!-- Heading -->
+        <h1 class="hero__title">
+
+            <span class="hero__title-main">
+                Delivering Government Contracts
+            </span>
+
+            <span class="hero__title-accent">
+                with Trust &amp; Excellence.
+            </span>
+
+        </h1>
+
+        <!-- Description -->
+        <p class="hero__sub">
+
+            Globion Solution Private Limited delivers government infrastructure,
+            facility management, engineering support, and public service solutions
+            across West Bengal with professionalism, transparency, and operational
+            excellence. From roads and bridges to government facilities and utility
+            infrastructure, we execute every project with accountability, quality,
+            safety, and a long-term commitment to sustainable development.
+
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__actions">
+
+            <a href="#services" class="btn btn--primary">
+                Explore Services
+            </a>
+
+            <a href="#quote" class="btn btn--secondary">
+                Request a Consultation
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="hero-showcase"
+         id="hero-overview"
+         aria-label="Company Highlights">
+
+    <div class="hero-showcase__media">
+
+        <!-- Hero 1 -->
+        <div class="hero-showcase__slide hero-slide-1">
+            <picture>
+                <source media="(max-width:576px)"
+                        srcset="{{ url_for('static', filename='img/hero1-mobile.jpeg') }}">
+                <img src="{{ url_for('static', filename='img/hero1.png') }}"
+                     alt="Chief Executive Officer">
+            </picture>
+        </div>
+
+        <!-- Hero 2 -->
+        <div class="hero-showcase__slide hero-slide-2">
+            <picture>
+                <source media="(max-width:576px)"
+                        srcset="{{ url_for('static', filename='img/hero2-mobile.jpeg') }}">
+                <img src="{{ url_for('static', filename='img/hero2.png') }}"
+                     alt="Managing Director">
+            </picture>
+        </div>
+
+        <!-- Hero 3 -->
+        <div class="hero-showcase__slide hero-slide-3">
+            <picture>
+                <source media="(max-width:576px)"
+                        srcset="{{ url_for('static', filename='img/hero3-mobile.jpeg') }}">
+                <img src="{{ url_for('static', filename='img/hero3.png') }}"
+                     alt="Director & Head of Human Resource">
+            </picture>
+        </div>
+
+        <!-- Hero 4 -->
+        <div class="hero-showcase__slide hero-slide-4">
+            <picture>
+                <source media="(max-width:576px)"
+                        srcset="{{ url_for('static', filename='img/hero4-mobile.jpeg') }}">
+                <img src="{{ url_for('static', filename='img/hero4.png') }}"
+                     alt="Admin">
+            </picture>
+        </div>
+
+        <!-- Hero 5 -->
+        <div class="hero-showcase__slide hero-slide-5">
+            <picture>
+                <source media="(max-width:576px)"
+                        srcset="{{ url_for('static', filename='img/hero5-mobile.jpeg') }}">
+                <img src="{{ url_for('static', filename='img/hero5.png') }}"
+                     alt="Leadership Team">
+            </picture>
+        </div>
+
+    </div>
+
+    <div class="wrap hero-showcase__inner">
+
+        <div class="hero-showcase__stats">
+
+            <div class="hero-showcase__stat">
+                <b>4+</b>
+                <span>Government Service Areas</span>
+            </div>
+
+            <div class="hero-showcase__stat">
+                <b>100%</b>
+                <span>Compliance Focused</span>
+            </div>
+
+            <div class="hero-showcase__stat">
+                <b>24/7</b>
+                <span>Operational Support</span>
+            </div>
+
+            <div class="hero-showcase__stat">
+                <b>West Bengal</b>
+                <span>Primary Operations</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

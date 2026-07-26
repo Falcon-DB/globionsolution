@@ -1,0 +1,321 @@
+<!-- ===================== contact ===================== -->
+<section
+    class="section section--concrete2"
+    id="quote"
+    aria-labelledby="quote-h"
+>
+    <div
+        class="hazard-bar hazard-bar--thin"
+        aria-hidden="true"
+        style="position:absolute;top:0;left:0;"
+    ></div>
+
+    <div class="wrap quote">
+
+        <!-- Left Side -->
+        <div class="quote__aside reveal">
+
+            <span class="kicker">
+                <span class="idx">07</span>
+                Contact Us
+            </span>
+
+            <h2 id="quote-h">
+                Let's Build the Future Together
+            </h2>
+
+            <p class="lead">
+                Whether you're a government department, public sector
+                organization, institutional client, or private enterprise,
+                our team is ready to discuss your infrastructure
+                requirements. Contact us for project consultations,
+                tender partnerships, or business inquiries.
+            </p>
+
+            <ul class="contact-list">
+
+                <li>
+
+                    <span class="ci">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+
+                            <path d="M4 5c0 8.3 6.7 15 15 15l1-3.5-4.2-1.4-1.6 1.6a11 11 0 0 1-4.9-4.9l1.6-1.6L9 6 5.5 5H4Z"/>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <b>Call Us</b>
+                        <a href="tel:+916003916502">
+                            +91 60039 16502
+                        </a>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="ci">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8">
+
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+
+                            <path d="M3 7l9 6 9-6"/>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <b>Email</b>
+                        <a href="mailto:globionsolution@gmail.com">
+                            globionsolution@gmail.com
+                        </a>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="ci">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8">
+
+                            <path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11Z"/>
+
+                            <circle cx="12" cy="10" r="2.5"/>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <b>Office</b>
+                        <span>
+                            Globsyn CrystalsSector V, Salt Lake<br>
+                            Kolkata - 700091West Bengal, India
+                        </span>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="ci">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8">
+
+                            <circle cx="12" cy="12" r="9"/>
+
+                            <path d="M12 7v5l3 2"/>
+
+                        </svg>
+                    </span>
+
+                    <div>
+                        <b>Business Hours</b>
+                        <span>
+                            Monday – Saturday<br>
+                            9:00 AM – 6:00 PM IST
+                        </span>
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="reveal">
+
+            <form
+                id="contactForm"
+                class="form-card"
+                method="POST"
+                action="{{ url_for('contact.submit_contact') }}"
+            >
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="name">
+                            Full Name
+                            <span class="req">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+
+                        <label for="phone">
+                            Phone Number
+                            <span class="req">*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+                        <label for="email">
+                            Email Address
+                            <span class="req">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="service">
+                            Inquiry Type
+                            <span class="req">*</span>
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+                            <option value="">
+                                Select...
+                            </option>
+
+                            <option>
+                                Government Infrastructure
+                            </option>
+
+                            <option>
+                                Healthcare Projects
+                            </option>
+
+                            <option>
+                                Roads & Highways
+                            </option>
+
+                            <option>
+                                Water Infrastructure
+                            </option>
+
+                            <option>
+                                Electrical Infrastructure
+                            </option>
+
+                            <option>
+                                Business Partnership
+                            </option>
+
+                            <option>
+                                General Inquiry
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="field field--full">
+                        <label for="budget">
+                            Estimated Project Value
+                        </label>
+
+                        <select
+                            id="budget"
+                            name="budget"
+                        >
+                            <option>
+                                Prefer not to disclose
+                            </option>
+
+                            <option>
+                                Below ₹50 Lakhs
+                            </option>
+
+                            <option>
+                                ₹50 Lakhs – ₹5 Crore
+                            </option>
+
+                            <option>
+                                ₹5 Crore – ₹25 Crore
+                            </option>
+
+                            <option>
+                                ₹25 Crore – ₹100 Crore
+                            </option>
+
+                            <option>
+                                Above ₹100 Crore
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="field field--full">
+
+                        <label for="message">
+                            Project Details
+                            <span class="req">*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <label class="consent">
+                        <input
+                            type="checkbox"
+                            required
+                        >
+                        <span>
+                            I authorize Globion Solution Private Limited
+                            to contact me regarding this inquiry.
+                        </span>
+
+                    </label>
+
+                    <button
+                        class="btn btn--lg btn--block"
+                        type="submit"
+                    >
+                        Submit Inquiry
+                    </button>
+
+                    <div
+                        id="formSuccess"
+                        class="form-success"
+                        role="status"
+                    >
+                        Thank you! Your inquiry has been submitted
+                        successfully.
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

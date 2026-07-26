@@ -1,0 +1,119 @@
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+
+    <!-- Page Title -->
+    <title>
+        {% block title %}
+        Globion Solution Private Limited | Government Infrastructure & EPC Company | West Bengal, India
+        {% endblock %}
+    </title>
+
+    <!-- SEO -->
+    <meta
+        name="description"
+        content="{% block description %}Globion Solution Private Limited is a Government Infrastructure & EPC company delivering healthcare, transportation, power, water, environmental, and public infrastructure projects across India.{% endblock %}"
+    >
+
+    <meta
+        name="keywords"
+        content="Government Contractor, EPC Company, Infrastructure, Construction, Roads, Bridges, Healthcare, Water Supply, Electrical Infrastructure, West Bengal, India"
+    >
+
+    <meta
+        name="author"
+        content="Globion Solution Private Limited"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <!-- Theme Color -->
+    <meta
+        name="theme-color"
+        content="#f47c20"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Globion Solution Private Limited"
+    >
+
+    <meta
+        property="og:description"
+        content="Government Infrastructure & EPC Company"
+    >
+
+    <meta
+        property="og:image"
+        content="{{ url_for('static', filename='img/og-image.jpg', _external=True) }}"
+    >
+
+    <meta
+        property="og:url"
+        content="{{ request.url }}"
+    >
+
+    <!-- Twitter Card -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Globion Solution Private Limited"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Government Infrastructure & EPC Company"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/vendor/bootstrap.min.css') }}">
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>

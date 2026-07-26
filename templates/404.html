@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 | Page Not Found | Globion Solution Private Limited</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+
+        body{
+
+            margin:0;
+
+            min-height:100vh;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            background:#17191C;
+
+            color:#fff;
+
+            font-family:var(--font-body);
+
+            overflow:hidden;
+
+        }
+
+        .error-page{
+
+            width:min(92%,900px);
+
+            padding:4rem 2rem;
+
+            text-align:center;
+
+            position:relative;
+
+            z-index:2;
+
+        }
+
+        .error-page::before{
+
+            content:"";
+
+            position:absolute;
+
+            inset:0;
+
+            border:1px solid rgba(255,255,255,.08);
+
+            border-radius:18px;
+
+            background:rgba(255,255,255,.03);
+
+            backdrop-filter:blur(12px);
+
+            z-index:-1;
+
+        }
+
+        .error-code{
+
+            font-family:var(--font-display);
+
+            font-size:clamp(6rem,18vw,11rem);
+
+            font-weight:800;
+
+            line-height:.85;
+
+            color:var(--hivis);
+
+            margin:0;
+
+            letter-spacing:-.04em;
+
+        }
+
+        .error-title{
+
+            margin:1rem 0;
+
+            font-size:clamp(2rem,4vw,3rem);
+
+            text-transform:uppercase;
+
+        }
+
+        .error-text{
+
+            max-width:620px;
+
+            margin:0 auto 2.5rem;
+
+            color:#c5cbd2;
+
+            font-size:1.1rem;
+
+            line-height:1.8;
+
+        }
+
+        .error-actions{
+
+            display:flex;
+
+            justify-content:center;
+
+            gap:1rem;
+
+            flex-wrap:wrap;
+
+        }
+
+        .error-bg{
+
+            position:fixed;
+
+            inset:0;
+
+            opacity:.08;
+
+            background-image:
+
+                linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+
+            background-size:45px 45px;
+
+            pointer-events:none;
+
+        }
+
+        @media(max-width:576px){
+
+            .error-page{
+
+                padding:3rem 1.5rem;
+
+            }
+
+            .error-text{
+
+                font-size:1rem;
+
+            }
+
+            .error-actions{
+
+                flex-direction:column;
+
+            }
+
+            .error-actions .btn{
+
+                width:100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="error-bg"></div>
+
+    <main class="error-page">
+
+        <h1 class="error-code">
+            404
+        </h1>
+
+        <h2 class="error-title">
+            Page Not Found
+        </h2>
+
+        <p class="error-text">
+
+            The page you're looking for could not be found or may have been moved.
+            Return to the homepage to continue exploring Globion Solution Private Limited's
+            government infrastructure, facility management, and public service solutions.
+
+        </p>
+
+        <div class="error-actions">
+
+            <a href="{{ url_for('main.index') }}"
+               class="btn">
+
+                Back to Home
+
+            </a>
+
+            <a href="#contact"
+               onclick="window.history.back(); return false;"
+               class="btn btn--ghost-light">
+
+                Go Back
+
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
