@@ -432,3 +432,313 @@ document.addEventListener(
 
 );
 })();
+
+/* =========================================================
+   GLOBION SOLUTION
+   INVESTORS & PARTNERS
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       SMOOTH SCROLLING
+       ===================================================== */
+
+    const investorLinks = document.querySelectorAll(
+        '.investors-section a[href^="#"]'
+    );
+
+
+    investorLinks.forEach(function (link) {
+
+        link.addEventListener("click", function (event) {
+
+            const targetId = this.getAttribute("href");
+
+
+            if (!targetId || targetId === "#") {
+                return;
+            }
+
+
+            const target = document.querySelector(targetId);
+
+
+            if (target) {
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       INVESTMENT CARD ANIMATION
+       ===================================================== */
+
+    const investmentCards = document.querySelectorAll(
+        ".investment-card"
+    );
+
+
+    if ("IntersectionObserver" in window) {
+
+        const investmentObserver =
+            new IntersectionObserver(
+                function (entries, observer) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add(
+                                "investment-visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        investmentCards.forEach(function (card, index) {
+
+            card.style.transitionDelay =
+                (index * 70) + "ms";
+
+            investmentObserver.observe(card);
+
+        });
+
+    } else {
+
+        investmentCards.forEach(function (card) {
+
+            card.classList.add(
+                "investment-visible"
+            );
+
+        });
+
+    }
+
+
+
+    /* =====================================================
+       FEATURED PARTNER ANIMATION
+       ===================================================== */
+
+    const featuredPartner =
+        document.querySelector(
+            ".featured-partner"
+        );
+
+
+    if (
+        featuredPartner &&
+        "IntersectionObserver" in window
+    ) {
+
+        const partnerObserver =
+            new IntersectionObserver(
+                function (entries, observer) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add(
+                                "partner-visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        partnerObserver.observe(
+            featuredPartner
+        );
+
+    } else if (featuredPartner) {
+
+        featuredPartner.classList.add(
+            "partner-visible"
+        );
+
+    }
+
+
+
+    /* =====================================================
+       BUTTON ARROW ANIMATION
+       ===================================================== */
+
+    const buttons = document.querySelectorAll(
+        ".investors-btn"
+    );
+
+
+    buttons.forEach(function (button) {
+
+        const arrow =
+            button.querySelector(
+                ".btn-arrow"
+            );
+
+
+        if (!arrow) {
+            return;
+        }
+
+
+        button.addEventListener(
+            "mouseenter",
+            function () {
+
+                arrow.style.transform =
+                    "translateX(4px)";
+
+            }
+        );
+
+
+        button.addEventListener(
+            "mouseleave",
+            function () {
+
+                arrow.style.transform =
+                    "translateX(0)";
+
+            }
+        );
+
+    });
+
+
+
+    /* =====================================================
+       FEATURED PARTNER HOVER
+       ===================================================== */
+
+    if (featuredPartner) {
+
+        featuredPartner.addEventListener(
+            "mouseenter",
+            function () {
+
+                this.classList.add(
+                    "featured-partner-hover"
+                );
+
+            }
+        );
+
+
+        featuredPartner.addEventListener(
+            "mouseleave",
+            function () {
+
+                this.classList.remove(
+                    "featured-partner-hover"
+                );
+
+            }
+        );
+
+    }
+
+
+
+    /* =====================================================
+       REDUCED MOTION SUPPORT
+       ===================================================== */
+
+    const prefersReducedMotion =
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
+    if (prefersReducedMotion) {
+
+        investmentCards.forEach(function (card) {
+
+            card.style.transitionDelay = "0ms";
+
+            card.classList.add(
+                "investment-visible"
+            );
+
+        });
+
+
+        if (featuredPartner) {
+
+            featuredPartner.classList.add(
+                "partner-visible"
+            );
+
+        }
+
+    }
+
+});
+
+/* =========================================================
+   INVESTMENT STATEMENT ROTATION
+   ========================================================= */
+
+const quoteSlides = document.querySelectorAll(
+    ".quote-slide"
+);
+
+if (quoteSlides.length > 1) {
+
+    let currentQuote = 0;
+
+    setInterval(function () {
+
+        quoteSlides[currentQuote].classList.remove(
+            "active"
+        );
+
+        currentQuote =
+            (currentQuote + 1) % quoteSlides.length;
+
+        quoteSlides[currentQuote].classList.add(
+            "active"
+        );
+
+    }, 4500);
+
+}

@@ -2324,3 +2324,1063 @@ ul { margin: 0; }
 .to-top.is-on { opacity: 1; visibility: visible; transform: none; }
 .to-top:hover { background: var(--hivis); }
 .to-top svg { width: 22px; height: 22px; }
+
+/* =========================================================
+   GLOBION SOLUTION
+   INVESTORS & PARTNERS
+   ========================================================= */
+
+.investors-section {
+    width: 100%;
+    background: #f8f5ef;
+    color: #1c2529;
+    box-sizing: border-box;
+}
+
+.investors-section *,
+.investors-section *::before,
+.investors-section *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.investors-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: stretch;
+
+    background: #fdfcf9;
+}
+
+
+/* =========================================================
+   PANELS
+   ========================================================= */
+
+.investors-panel,
+.partners-panel {
+    min-width: 0;
+
+    padding:
+        clamp(38px, 3.5vw, 52px)
+        clamp(28px, 3.5vw, 48px);
+
+    background: #fdfcf9;
+}
+
+.investors-panel {
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #ddd8cf;
+}
+
+.partners-panel {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.investors-eyebrow {
+    display: block;
+
+    margin: 0 0 12px;
+
+    color: #8a8176;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: 0.25em;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.investors-title {
+    margin: 0;
+
+    color: #17242a;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(38px, 3.4vw, 54px);
+
+    font-weight: 500;
+
+    letter-spacing: -0.025em;
+    line-height: 0.96;
+}
+
+
+/* Orange underline */
+
+.investors-title::after {
+    content: "";
+
+    display: block;
+
+    width: 32px;
+    height: 2px;
+
+    margin-top: 12px;
+
+    background: #f47c20;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.investors-description {
+    width: 100%;
+    max-width: 560px;
+
+    margin:
+        16px 0 17px;
+
+    color: #62615d;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.investors-btn {
+    width: fit-content;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    min-height: 38px;
+
+    padding:
+        0 14px;
+
+    background: #18272d;
+
+    border:
+        1px solid #18272d;
+
+    border-radius: 1px;
+
+    color: #ffffff;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.investors-btn:hover {
+    background: #f47c20;
+    border-color: #f47c20;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.investors-btn .btn-arrow {
+    font-size: 14px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+}
+
+.investors-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   INVESTMENT HIGHLIGHTS
+   ========================================================= */
+
+.investment-highlights {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    margin-top: 16px;
+
+    border-top:
+        1px solid #ddd8cf;
+
+    border-left:
+        1px solid #ddd8cf;
+}
+
+
+/* =========================================================
+   INVESTMENT CARD
+   ========================================================= */
+
+.investment-card {
+    min-height: 96px;
+
+    padding:
+        10px 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #fdfcf9;
+
+    border-right:
+        1px solid #ddd8cf;
+
+    border-bottom:
+        1px solid #ddd8cf;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.investment-card:hover {
+    background: #f8f1e8;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   INVESTMENT ICON
+   ========================================================= */
+
+.investment-icon {
+    height: 26px;
+
+    margin-bottom: 5px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #f47c20;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+.investment-card h3 {
+    margin: 0;
+
+    color: #38434a;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   INVESTOR QUOTE / STATEMENT
+   ========================================================= */
+
+.investors-quote {
+    position: relative;
+
+    width: 100%;
+
+    /*
+       This fills only the remaining available
+       vertical space instead of creating a huge gap.
+    */
+
+    flex: 1;
+
+    min-height: 145px;
+
+    margin-top: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        25px 28px;
+
+    overflow: hidden;
+
+    border-top:
+        1px solid #ddd8cf;
+
+    border-bottom:
+        1px solid #eeeae3;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(248, 245, 239, 0.2),
+            rgba(253, 252, 249, 0.85)
+        );
+}
+
+
+/* =========================================================
+   QUOTE MARKS
+   ========================================================= */
+
+.quote-mark {
+    position: absolute;
+
+    color: #f47c20;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 54px;
+
+    line-height: 1;
+
+    opacity: 0.9;
+
+    pointer-events: none;
+}
+
+
+.quote-mark-left {
+    top: 17px;
+    left: 9px;
+}
+
+
+.quote-mark-right {
+    right: 9px;
+    bottom: 2px;
+}
+
+
+/* =========================================================
+   QUOTE CONTENT
+   ========================================================= */
+
+.quote-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 520px;
+
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   QUOTE SLIDES
+   ========================================================= */
+
+.quote-slide {
+    position: absolute;
+
+    width: 100%;
+
+    padding:
+        0 20px;
+
+    color: #6c6b67;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(14px, 1.3vw, 18px);
+
+    font-weight: 400;
+
+    line-height: 1.45;
+
+    letter-spacing: 0.01em;
+
+    opacity: 0;
+
+    transform:
+        translateY(14px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.quote-slide.active {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   QUOTE ACCENT
+   ========================================================= */
+
+.quote-content::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -14px;
+    left: 50%;
+
+    width: 26px;
+    height: 2px;
+
+    background: #f47c20;
+
+    transform:
+        translateX(-50%);
+}
+
+
+/* =========================================================
+   BAPI KUNDU — FEATURED PARTNER
+   ========================================================= */
+
+.featured-partner {
+    position: relative;
+
+    /*
+       Smaller than the full right panel.
+       This prevents the photograph from dominating
+       the entire section.
+    */
+
+    width: 90%;
+    max-width: 410px;
+
+    margin-top: 14px;
+
+    align-self: flex-start;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #fdfcf9;
+
+    border:
+        1px solid #ddd8cf;
+
+    opacity: 1;
+
+    transform: none;
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+
+/* =========================================================
+   ORANGE LEFT BORDER
+   ========================================================= */
+
+.featured-partner::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 3px;
+
+    background: #f47c20;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   BAPI PHOTO — SQUARE
+   ========================================================= */
+
+.featured-partner-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #e8e3db;
+}
+
+
+.featured-partner-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       Keeps Bapi's face and upper body
+       visually balanced.
+    */
+
+    object-position: center 32%;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+.featured-partner:hover
+.featured-partner-image img {
+    transform:
+        scale(1.02);
+}
+
+
+/* =========================================================
+   BAPI INFORMATION
+   ========================================================= */
+
+.featured-partner-info {
+    width: 100%;
+
+    min-height: 66px;
+
+    padding:
+        9px 13px 10px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    background: #fdfcf9;
+}
+
+
+/* =========================================================
+   BAPI LABEL
+   ========================================================= */
+
+.featured-partner-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #f47c20;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   BAPI NAME
+   ========================================================= */
+
+.featured-partner-info h3 {
+    margin:
+        0 0 2px;
+
+    color: #17242a;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(25px, 2.3vw, 32px);
+
+    font-weight: 500;
+
+    letter-spacing: -0.01em;
+
+    line-height: 0.95;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BAPI DESIGNATION
+   ========================================================= */
+
+.featured-partner-info p {
+    margin: 0;
+
+    color: #5f6261;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   INVESTOR GROUP DIVIDER
+   ========================================================= */
+
+.more-partners {
+    width: 90%;
+    max-width: 410px;
+
+    margin-top: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.more-partners span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #ddd8cf;
+}
+
+
+.more-partners p {
+    margin: 0;
+
+    color: #8a8176;
+
+    font-family:
+        "Barlow",
+        Arial,
+        sans-serif;
+
+    font-size: 5px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PARTNER BUTTON / CONTENT SPACING
+   ========================================================= */
+
+.partners-panel > .investors-btn {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1001px) {
+
+    .investors-container {
+        align-items: stretch;
+    }
+
+    .investors-panel,
+    .partners-panel {
+        /*
+           No artificial min-height.
+           Grid height comes from the actual content.
+        */
+
+        height: 100%;
+    }
+
+    /*
+       The quote uses the remaining space on
+       the investors side.
+    */
+
+    .investors-quote {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .investors-container {
+        grid-template-columns: 1fr;
+    }
+
+    .investors-panel {
+        border-right: 0;
+
+        border-bottom:
+            1px solid #ddd8cf;
+    }
+
+    .investors-panel,
+    .partners-panel {
+        height: auto;
+    }
+
+    .investors-quote {
+        flex: none;
+
+        min-height: 150px;
+    }
+
+    .featured-partner {
+        width: 90%;
+        max-width: 430px;
+    }
+
+    .more-partners {
+        width: 90%;
+        max-width: 430px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .investors-panel,
+    .partners-panel {
+        padding:
+            34px 20px;
+    }
+
+
+    .investors-eyebrow {
+        margin-bottom: 11px;
+
+        font-size: 7px;
+    }
+
+
+    .investors-title {
+        font-size: 38px;
+    }
+
+
+    .investors-description {
+        margin:
+            15px 0 16px;
+
+        font-size: 11px;
+    }
+
+
+    .investors-btn {
+        min-height: 37px;
+
+        padding:
+            0 13px;
+
+        font-size: 9px;
+    }
+
+
+    /* Investment cards */
+
+    .investment-highlights {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        margin-top: 15px;
+    }
+
+
+    .investment-card {
+        min-height: 92px;
+
+        padding:
+            9px 6px;
+    }
+
+
+    .investment-icon {
+        height: 24px;
+
+        margin-bottom: 5px;
+
+        font-size: 20px;
+    }
+
+
+    .investment-card h3 {
+        font-size: 7px;
+    }
+
+
+    /* Quote */
+
+    .investors-quote {
+        min-height: 145px;
+
+        margin-top: 18px;
+
+        padding:
+            25px 16px;
+    }
+
+
+    .quote-content {
+        min-height: 75px;
+    }
+
+
+    .quote-slide {
+        padding:
+            0 16px;
+
+        font-size: 15px;
+
+        line-height: 1.4;
+    }
+
+
+    .quote-mark {
+        font-size: 50px;
+    }
+
+
+    .quote-mark-left {
+        top: 15px;
+        left: 4px;
+    }
+
+
+    .quote-mark-right {
+        right: 4px;
+        bottom: 0;
+    }
+
+
+    /* Bapi card */
+
+    .featured-partner {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 15px;
+    }
+
+
+    .featured-partner-image {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    .featured-partner-info {
+        min-height: 68px;
+
+        padding:
+            9px 12px 10px 14px;
+    }
+
+
+    .featured-partner-label {
+        font-size: 6px;
+    }
+
+
+    .featured-partner-info h3 {
+        font-size: 28px;
+    }
+
+
+    .featured-partner-info p {
+        font-size: 10px;
+    }
+
+
+    .more-partners {
+        width: 100%;
+
+        margin-top: 11px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .investors-panel,
+    .partners-panel {
+        padding:
+            30px 17px;
+    }
+
+
+    .investors-title {
+        font-size: 34px;
+    }
+
+
+    .investors-description {
+        font-size: 10px;
+    }
+
+
+    .investment-card {
+        min-height: 88px;
+    }
+
+
+    .investment-card h3 {
+        font-size: 6.5px;
+    }
+
+
+    .investors-quote {
+        min-height: 135px;
+
+        padding:
+            22px 12px;
+    }
+
+
+    .quote-slide {
+        font-size: 14px;
+    }
+
+
+    .featured-partner-info h3 {
+        font-size: 26px;
+    }
+
+
+    .featured-partner-info p {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .investors-btn,
+    .investment-card,
+    .featured-partner,
+    .featured-partner-image img,
+    .quote-slide {
+        transition: none;
+    }
+}
